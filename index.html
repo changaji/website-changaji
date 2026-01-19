@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changaji – No Bullshit Software</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #6f6262;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+    header img {
+      max-width: 160px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      color: #f2c94c;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 1.2rem 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .cta {
+      margin: 3rem 0;
+      text-align: center;
+    }
+    .cta a {
+      background: #f2c94c;
+      color: #000;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .lang-switch button {
+      background: transparent;
+      border: 1px solid #f2c94c;
+      color: #f2c94c;
+      margin: 0 0.5rem;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+    }
+    .hidden { display: none; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Replace logo.png with your real logo file name -->
+  <img src="logo.png" alt="Changaji Logo" />
+  <h1>Changaji</h1>
+  <p>No middlemen. No fluff. Just serious software.</p>
+  <div class="lang-switch">
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('de')">Deutsch</button>
+  </div>
+</header>
+
+<section id="en">
+  <h2>Who We Are</h2>
+  <p>We are Changaji. A small, international team from Germany, the Middle East, and Asia, building custom software and giving honest technical advice to companies worldwide.</p>
+
+  <h2>What We Do</h2>
+  <ul>
+    <li>Web applications (frontend & backend)</li>
+    <li>DevOps, CI/CD, automation</li>
+    <li>Azure, AWS, hybrid cloud</li>
+    <li>Hybrid & mobile apps</li>
+    <li>Test automation & QA</li>
+    <li>Embedded software & IoT</li>
+    <li>Business logic & APIs</li>
+  </ul>
+
+  <h2>Our Model</h2>
+  <p>You hire Changaji like full-time employees, without the baggage:</p>
+  <ul>
+    <li>Fixed monthly rate</li>
+    <li>Up to 120 hours per month</li>
+    <li>Minimum 6 months</li>
+    <li>No long contracts</li>
+    <li>No paid leave overhead</li>
+    <li>No bonuses, no insurance</li>
+    <li>No middlemen</li>
+  </ul>
+
+  <h2>Why Changaji</h2>
+  <ul>
+    <li>Engineers first, not salespeople</li>
+    <li>Strong real-world experience</li>
+    <li>Few projects, full focus</li>
+    <li>Direct communication</li>
+    <li>German-speaking on-site support</li>
+    <li>Worked with MVV Group</li>
+  </ul>
+
+  <h2>How We Work</h2>
+  <ol>
+    <li>You explain the problem</li>
+    <li>We challenge it</li>
+    <li>We design together</li>
+    <li>We build, test, deploy</li>
+    <li>We improve continuously</li>
+  </ol>
+
+  <div class="cta">
+    <a href="mailto:hello@changaji.com">Talk to Changaji</a>
+  </div>
+</section>
+
+<section id="de" class="hidden">
+  <h2>Wer Wir Sind</h2>
+  <p>Wir sind Changaji. Ein kleines, internationales Team aus Deutschland, dem Nahen Osten und Asien. Wir entwickeln individuelle Softwarelösungen und beraten Unternehmen weltweit.</p>
+
+  <h2>Was Wir Machen</h2>
+  <ul>
+    <li>Webanwendungen (Frontend & Backend)</li>
+    <li>DevOps, CI/CD, Automatisierung</li>
+    <li>Azure, AWS, Hybrid Cloud</li>
+    <li>Mobile & Hybrid Apps</li>
+    <li>Testautomatisierung & QA</li>
+    <li>Embedded Software & IoT</li>
+    <li>Business-Logik & APIs</li>
+  </ul>
+
+  <h2>Unser Modell</h2>
+  <p>Sie mieten Changaji wie festangestellte Entwickler, ohne die Nachteile:</p>
+  <ul>
+    <li>Fester Monatspreis</li>
+    <li>Bis zu 120 Stunden pro Monat</li>
+    <li>Mindestens 6 Monate</li>
+    <li>Keine langen Verträge</li>
+    <li>Keine Urlaubskosten</li>
+    <li>Keine Boni, keine Versicherungen</li>
+    <li>Keine Vermittler</li>
+  </ul>
+
+  <h2>Warum Changaji</h2>
+  <ul>
+    <li>Techniker, keine Verkäufer</li>
+    <li>Echte Projekterfahrung</li>
+    <li>Wenige Projekte, voller Fokus</li>
+    <li>Direkte Kommunikation</li>
+    <li>Deutscher Ansprechpartner vor Ort</li>
+    <li>Referenz: MVV Group</li>
+  </ul>
+
+  <h2>Arbeitsweise</h2>
+  <ol>
+    <li>Sie erklären das Problem</li>
+    <li>Wir hinterfragen es</li>
+    <li>Wir entwerfen gemeinsam</li>
+    <li>Wir bauen, testen, liefern</li>
+    <li>Wir verbessern stetig</li>
+  </ol>
+
+  <div class="cta">
+    <a href="mailto:hello@changaji.com">Kontakt aufnehmen</a>
+  </div>
+</section>
+
+<footer>
+  © Changaji – No Bullshit Software
+</footer>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('en').classList.add('hidden');
+    document.getElementById('de').classList.add('hidden');
+    document.getElementById(lang).classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
